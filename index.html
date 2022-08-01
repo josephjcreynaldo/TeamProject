@@ -1,0 +1,114 @@
+<html>
+  <header>
+     <title>  APPDEV </title>     
+     <link rel="stylesheet" href="css/main.css">
+       
+     <script>       
+     
+       //JSON           --------------        
+       //               {} , [] , number , stringn , float
+       //function       --------------
+       //var            --------------
+
+       var CourseInfo={                                 // <-    {}  =  object
+        Department:"IT DEPARTMENT",                     //                 property -> value
+        Course:"VS IT",
+        Subject:"APPDEVT",
+        Prof:"Joseph",
+       }
+
+       var portfolio=function(description){
+           return {description:description}
+       }  
+       var pages=function(website,account){
+         return {website:website,account:account}      
+       }
+
+       //var portfolioArray=[]
+       //var webistelinksArray=[]
+
+       var Student=function(id,name,subject,portfolio,webistelinks){            //<--  parameter    
+          //var portfolio=[]   
+          //var webistelinks=[]   
+        return  {id:id,
+                name:name,
+                subject:subject,
+                   portfolio:portfolio,
+                   webistelinks:webistelinks }            //<--  return value 
+       }
+
+      //Student
+      // listing : []                                   // listing/collection  = Array 
+      //  portfolio
+      //  webistelinks
+
+      var StudentInfo=[]                                //<-    []  = array
+
+      var myportfolio=new  portfolio("created an android apps called Snake")
+      var myportfolioArray=[]  
+      myportfolioArray.push(myportfolio)
+      var mywebsitelinks=new  pages("github","jonas")
+      var mywebsites=[]  
+      mywebsites.push (mywebsitelinks)
+      StudentInfo.push(Student(1,"Jonas","APPDEVT",
+                              myportfolioArray ,
+                              mywebsites    ))           //<- insert Student Object into StudedentInfo
+
+      var myportfolio=new  portfolio("created an android apps called BlockBreaker")
+      var myportfolioArray=[]  
+      myportfolioArray.push(myportfolio)
+      var mywebsitelinks=new  pages("github","neil")
+      var mywebsites=[]  
+      mywebsites.push (mywebsitelinks)      
+      StudentInfo.push(Student(1,"Neil","APPDEVT",
+                               myportfolioArray ,
+                              mywebsites    ))     //<- insert Student Object into StudedentInfo
+
+     var myportfolio=new  portfolio("created an android apps called Tictactoe")
+      var myportfolioArray=[]  
+      myportfolioArray.push(myportfolio)
+      var mywebsitelinks=new  pages("github","angelo")
+      var mywebsites=[]  
+      mywebsites.push (mywebsitelinks)
+
+      StudentInfo.push(Student(1,"Angelo","APPDEVT",
+                                   myportfolioArray ,
+                                   mywebsites    ))           //<- insert Student Object into StudedentInfo
+
+       var myportfolio=new  portfolio("created an android apps called Fluffybird Clone")
+      var myportfolioArray=[]  
+      myportfolioArray.push(myportfolio)
+      var mywebsitelinks=new  pages("github","sean")
+      var mywebsites=[]  
+      mywebsites.push (mywebsitelinks)
+      StudentInfo.push(Student(1,"Sean","APPDEVT",
+                                   myportfolioArray ,
+                                   mywebsites    ))     //<- insert Student Object into StudedentInfo
+
+
+      console.log(JSON.stringify(StudentInfo))
+
+     </script>
+  </header>
+  <body>
+
+    <h1>My First Heading</h1>
+    <h2  class="div1">My First Heading</h2>
+    <h3>My First Heading</h3>
+    <h4>My First Heading</h4>
+    <h5>My First Heading</h5>
+    <h6>My First Heading</h6>
+    <p>My first paragraph.</p>
+
+    <!-- attribute -->
+    <div class="container">
+        <a href="https://www.youtube.com">Youtube</a>
+        <img src="images/a.jpg" width="150" height="200" alt="ITO I">  
+        <div class="div1 centerDiv" >Div Element</div>  
+        <div class="div2 centerDiv">Div Element</div>
+        <div class="div3 centerDiv">Div Element</div>  
+        <div class="div4 centerDiv">Div Element</div>      
+    </div>
+   
+  </body>
+</html>
